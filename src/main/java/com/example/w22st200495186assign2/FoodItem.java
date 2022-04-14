@@ -15,20 +15,25 @@ public class FoodItem {
      * This is the constructor for the foodItem class and this takes name, description, imagelocation, calories, price, spicylevel, ingredients as arguments
      * @param name
      * @param description
-     * @param imageLocation
+     //* @param imageLocation
      * @param calories
      * @param price
      * @param spicyLevel
-     * @param ingredients
+     //* @param ingredients
+    , ArrayList<String> ingredients, String imageLocation
      */
-    public FoodItem(String name, String description, String imageLocation, double calories, double price, double spicyLevel, ArrayList<String> ingredients) {
+    public FoodItem(String name, double calories, double price, double spicyLevel, String description) {
         setName(name);
-        setDescription(description);
-        setImageLocation(imageLocation);
         setCalories(calories);
         setPrice(price);
         setSpicyLevel(spicyLevel);
         setIngredients(ingredients);
+        setDescription(description);
+        setImageLocation(imageLocation);
+    }
+
+    public FoodItem() {
+
     }
 
     /**
