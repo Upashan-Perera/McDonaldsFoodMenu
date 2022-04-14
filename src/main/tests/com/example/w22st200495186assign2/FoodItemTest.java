@@ -104,4 +104,5 @@ class FoodItemTest {
             foodItem.setSpicyLevel(-5);
         });
     }
+
 }

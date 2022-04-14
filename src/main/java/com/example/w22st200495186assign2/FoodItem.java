@@ -149,21 +149,4 @@ public class FoodItem {
         }
 
     }
-
-    /**
-     * this is the setter method for the arraylist
-     * @param ingredients
-     */
-    public void setIngredients(ArrayList<String> ingredients) {
-
-        ingredients = new ArrayList<>();
-    }
-
-    /**
-     * this is the toString function returning some important values
-     * @return
-     */
-    public String toString() {
-        return String.format("%s-%.2f-$%.2f-%s-%.1f",name,calories,price,description,spicyLevel);
-    }
 }
