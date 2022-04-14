@@ -7,29 +7,23 @@ public class FoodItem {
     /**
      * Initializing the instance variables
      */
-    private String name, description, imageLocation;
+    private String name, description ;
     private double calories, price, spicyLevel;
-    private ArrayList<String> ingredients ;
 
     /**
      * This is the constructor for the foodItem class and this takes name, description, imagelocation, calories, price, spicylevel, ingredients as arguments
      * @param name
      * @param description
-     //* @param imageLocation
      * @param calories
      * @param price
      * @param spicyLevel
-     //* @param ingredients
-    , ArrayList<String> ingredients, String imageLocation
      */
     public FoodItem(String name, double calories, double price, double spicyLevel, String description) {
         setName(name);
         setCalories(calories);
         setPrice(price);
         setSpicyLevel(spicyLevel);
-        setIngredients(ingredients);
         setDescription(description);
-        setImageLocation(imageLocation);
     }
 
     public FoodItem() {
@@ -85,21 +79,6 @@ public class FoodItem {
         }
     }
 
-    /**
-     * this is the getter method for imagelocation variable
-     * @return
-     */
-    public String getImageLocation() {
-        return imageLocation;
-    }
-
-    /**
-     * this is the getter method for imagelocation variable
-     * @param imageLocation
-     */
-    public void setImageLocation(String imageLocation) {
-        this.imageLocation = imageLocation;
-    }
 
     /**
      * this is the getter method for calories variable
@@ -169,14 +148,6 @@ public class FoodItem {
             throw new IllegalArgumentException(spicyLevel +" is not a valid input value");
         }
 
-    }
-
-    /**
-     * This is the getter method for the arraylist
-     * @return
-     */
-    public ArrayList<String> getIngredients() {
-        return ingredients;
     }
 
     /**
