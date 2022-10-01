@@ -8,7 +8,7 @@ JavaFX
 
 SceneBuilder
 
-Scenes
+InteliJ
 
 Controllers
 
